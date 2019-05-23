@@ -1,0 +1,9 @@
+{
+  "errors": [
+    {
+      "error_code": "1015-003",
+      "description": "Account is not entitled.",
+      "api_specification_url": "https://devstore.wellsfargo.com/store"
+    }
+  ]
+}

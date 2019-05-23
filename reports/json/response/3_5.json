@@ -1,0 +1,699 @@
+{
+  "transactions": [
+    {
+      "description": "BANK DEPOSIT SWEEP 050216 10,020",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10020.0
+      },
+      "transaction_id": "2016-5-2_1",
+      "transaction_amount": {
+        "amount": 0.02
+      },
+      "posted_date": "2016-05-02",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-05-02",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-5-2_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-5-2_2",
+      "transaction_amount": {
+        "amount": -0.02
+      },
+      "posted_date": "2016-05-02",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-5-2_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-4-29_1",
+      "transaction_amount": {
+        "amount": -0.29
+      },
+      "posted_date": "2016-04-29",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-4-29_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 042916 10,020",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10020.0
+      },
+      "transaction_id": "2016-4-29_2",
+      "transaction_amount": {
+        "amount": 0.29
+      },
+      "posted_date": "2016-04-29",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-04-29",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-4-29_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-4-1_1",
+      "transaction_amount": {
+        "amount": -0.01
+      },
+      "posted_date": "2016-04-01",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-4-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 040116 10,020",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10020.0
+      },
+      "transaction_id": "2016-4-1_2",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2016-04-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-04-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-4-1_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-3-31_1",
+      "transaction_amount": {
+        "amount": -0.3
+      },
+      "posted_date": "2016-03-31",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-3-31_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 033116 10,020",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10020.0
+      },
+      "transaction_id": "2016-3-31_2",
+      "transaction_amount": {
+        "amount": 0.3
+      },
+      "posted_date": "2016-03-31",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-03-31",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-3-31_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-3-1_1",
+      "transaction_amount": {
+        "amount": -0.01
+      },
+      "posted_date": "2016-03-01",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-3-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 030116 10,020",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10020.0
+      },
+      "transaction_id": "2016-3-1_2",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2016-03-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-03-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-3-1_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-2-29_1",
+      "transaction_amount": {
+        "amount": -0.28
+      },
+      "posted_date": "2016-02-29",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-2-29_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 022916 10,019",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10019.0
+      },
+      "transaction_id": "2016-2-29_2",
+      "transaction_amount": {
+        "amount": 0.28
+      },
+      "posted_date": "2016-02-29",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-02-29",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-2-29_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 020116 10,019",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10019.0
+      },
+      "transaction_id": "2016-2-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2016-02-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-02-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-2-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 0.0
+      },
+      "transaction_id": "2016-2-1_2",
+      "transaction_amount": {
+        "amount": -0.01
+      },
+      "posted_date": "2016-02-01",
+      "transaction_type": "Reinvest Interest",
+      "status": "POSTED",
+      "debit_credit_memo": "DEBIT",
+      "confirmation_number": "2016-2-1_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 012916 10,019",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10019.0
+      },
+      "transaction_id": "2016-1-29_1",
+      "transaction_amount": {
+        "amount": 0.27
+      },
+      "posted_date": "2016-01-29",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-01-29",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-1-29_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 010416 10,019",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10019.0
+      },
+      "transaction_id": "2016-1-4_1",
+      "transaction_amount": {
+        "amount": 0.04
+      },
+      "posted_date": "2016-01-04",
+      "transaction_type": "Interest",
+      "transaction_date": "2016-01-04",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2016-1-4_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 123115 10,019",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10019.0
+      },
+      "transaction_id": "2015-12-31_1",
+      "transaction_amount": {
+        "amount": 0.3
+      },
+      "posted_date": "2015-12-31",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-12-31",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-12-31_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 120115 10,019",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10019.0
+      },
+      "transaction_id": "2015-12-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2015-12-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-12-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-12-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 113015 10,018",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10018.0
+      },
+      "transaction_id": "2015-11-30_1",
+      "transaction_amount": {
+        "amount": 0.28
+      },
+      "posted_date": "2015-11-30",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-11-30",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-11-30_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 103015 10,018",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10018.0
+      },
+      "transaction_id": "2015-10-30_2",
+      "transaction_amount": {
+        "amount": 0.3
+      },
+      "posted_date": "2015-10-30",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-10-30",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-10-30_2"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 100115 10,018",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10018.0
+      },
+      "transaction_id": "2015-10-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2015-10-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-10-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-10-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 093015 10,018",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10018.0
+      },
+      "transaction_id": "2015-9-30_1",
+      "transaction_amount": {
+        "amount": 0.29
+      },
+      "posted_date": "2015-09-30",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-09-30",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-9-30_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 090115 10,018",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10018.0
+      },
+      "transaction_id": "2015-9-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2015-09-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-09-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-9-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 083115 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-8-31_1",
+      "transaction_amount": {
+        "amount": 0.28
+      },
+      "posted_date": "2015-08-31",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-08-31",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-8-31_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 080315 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-8-3_1",
+      "transaction_amount": {
+        "amount": 0.03
+      },
+      "posted_date": "2015-08-03",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-08-03",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-8-3_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 073115 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-7-31_1",
+      "transaction_amount": {
+        "amount": 0.3
+      },
+      "posted_date": "2015-07-31",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-07-31",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-7-31_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 070115 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-7-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2015-07-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-07-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-7-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 063015 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-6-30_1",
+      "transaction_amount": {
+        "amount": 0.29
+      },
+      "posted_date": "2015-06-30",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-06-30",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-6-30_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 060115 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-6-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2015-06-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-06-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-6-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 052915 10,017",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10017.0
+      },
+      "transaction_id": "2015-5-29_1",
+      "transaction_amount": {
+        "amount": 0.04
+      },
+      "posted_date": "2015-05-29",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-05-29",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-5-29_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 052715 10,016",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10016.0
+      },
+      "transaction_id": "2015-5-27_1",
+      "transaction_amount": {
+        "amount": 0.56
+      },
+      "posted_date": "2015-05-27",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-05-27",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-5-27_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 040115 10,016",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10016.0
+      },
+      "transaction_id": "2015-4-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2015-04-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-04-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-4-1_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 033115 10,016",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10016.0
+      },
+      "transaction_id": "2015-3-31_1",
+      "transaction_amount": {
+        "amount": 0.29
+      },
+      "posted_date": "2015-03-31",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-03-31",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-3-31_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 030215 10,016",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10016.0
+      },
+      "transaction_id": "2015-3-2_1",
+      "transaction_amount": {
+        "amount": 0.02
+      },
+      "posted_date": "2015-03-02",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-03-02",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-3-2_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 022715 10,016",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10016.0
+      },
+      "transaction_id": "2015-2-27_1",
+      "transaction_amount": {
+        "amount": 0.26
+      },
+      "posted_date": "2015-02-27",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-02-27",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-2-27_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 020215 10,016",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10016.0
+      },
+      "transaction_id": "2015-2-2_1",
+      "transaction_amount": {
+        "amount": 0.02
+      },
+      "posted_date": "2015-02-02",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-02-02",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-2-2_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 013015 10,015",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10015.0
+      },
+      "transaction_id": "2015-1-30_1",
+      "transaction_amount": {
+        "amount": 0.29
+      },
+      "posted_date": "2015-01-30",
+      "transaction_type": "Interest",
+      "transaction_date": "2015-01-30",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2015-1-30_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 123114 10,015",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10015.0
+      },
+      "transaction_id": "2014-12-31_1",
+      "transaction_amount": {
+        "amount": 0.3
+      },
+      "posted_date": "2014-12-31",
+      "transaction_type": "Interest",
+      "transaction_date": "2014-12-31",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2014-12-31_1"
+    },
+    {
+      "description": "BANK DEPOSIT SWEEP 120114 10,015",
+      "brokerage_transaction": {
+        "security_id": "9999052",
+        "security_type": "OTHER",
+        "units": 10015.0
+      },
+      "transaction_id": "2014-12-1_1",
+      "transaction_amount": {
+        "amount": 0.01
+      },
+      "posted_date": "2014-12-01",
+      "transaction_type": "Interest",
+      "transaction_date": "2014-12-01",
+      "status": "POSTED",
+      "debit_credit_memo": "CREDIT",
+      "confirmation_number": "2014-12-1_1"
+    }
+  ]
+}

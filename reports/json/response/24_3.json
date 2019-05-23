@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "error_code": "400-014",
+      "description": "'ach_file_originator_id' cannot have more than 10 character(s).",
+      "field_name": "ach_file_originator_id",
+      "field_value": "SIT1234567XXXXXXXXXXXXXXXXXX",
+      "api_specification_url": "https://devstore.wellsfargo.com/store"
+    }
+  ]
+}

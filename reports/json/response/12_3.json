@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "error_code": "400-015",
+      "description": "'ISO_20022_document' cannot have fewer than 1 character(s).",
+      "field_name": "ISO_20022_document",
+      "field_value": "",
+      "api_specification_url": "https://devstore.wellsfargo.com/store"
+    }
+  ]
+}

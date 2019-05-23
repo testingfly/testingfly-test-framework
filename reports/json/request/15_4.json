@@ -1,0 +1,12 @@
+{
+  "as_of_date": "2019-04-16",
+  "accounts": [
+    {
+      "bank_id": "121000248",
+      "account_number": "2000003398981"
+    }
+  ],
+  "balance_types": [
+    "OPENING_AVAILABLE"
+  ]
+}

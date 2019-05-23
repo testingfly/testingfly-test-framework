@@ -1,0 +1,9 @@
+{
+  "account_number": "2000049727300",
+  "routing_number": "091000019",
+  "item_type": "DEPOSIT_SLIP",
+  "start_posting_date": "20161201",
+  "end_posting_date": "20170110",
+  "min_amount": 1000,
+  "max_amount": 30000
+}

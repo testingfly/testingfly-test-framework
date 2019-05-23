@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$messages.locale.language" lang="$messages.locale.language">
+<head>
+  <title>$meta.reportTitle - $messages.getString("overview")</title>
+  ##<title>Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  #if ($meta.stylesheetPath)
+  <link href="custom.css" rel="stylesheet" type="text/css" />
+  #end
+</head>
+<body>
+<div id="meta">
+ 	##$messages.getString("generatedBy")
+    #foreach ($result in $suites.get(0).results)
+	    #set ($env = $result.testContext.test.parameters.environment)
+	    #set ($apiname = $result.testContext.test.parameters.apiname)
+    #end
+  	Generated in ${env}
+  
+  $messages.getString("atTime") $meta.reportTime $messages.getString("onDate") $meta.reportDate
+  <br /><span id="systemInfo">$meta.user&nbsp;/&nbsp;$meta.javaInfo&nbsp;/&nbsp;$meta.platform</span>
+</div>
+
+<h1>$meta.reportTitle</h1>
+#if (!$utils.allOutput.empty)
+  <p>
+    <a href="output.html">$messages.getString("logOutput")</a>
+    #if ($meta.coverageLink)
+      &#183; <a href="$meta.coverageLink" target="_top">$messages.getString("coverageReport")</a>
+    #end
+  </p>
+#end
+
+#set ($totalTCs = 0)
+#set ($totalPassed = 0)
+#set ($totalFailed = 0)
+#foreach ($suite in $suites)
+  #foreach ($result in $suite.results)
+  #set ($totalTCs = $totalTCs + 1)
+  
+  
+  #if (($result.testContext.skippedTests.size() + $result.testContext.failedTests.size()) > 0)
+    #set ($totalFailed = $totalFailed + 1)
+    #else
+    #set ($totalPassed = $totalPassed + 1)
+  #end
+    
+  #end
+#end
+  
+<table class="overviewTable">
+  <tr>
+    <th colspan="6" class="header suite">
+		TEST SUMMARY
+    </th>
+  </tr>
+  <tr class="columnHeadingsLeft">
+    <th>API</th>
+    <th>Total TCs</th>
+    <th>Total Pass</th>
+    <th>Total Fail</th>
+    <th>Pass Rate</th>
+    <th>Fail Rate</th>    
+  </tr>
+  
+
+  <tr class="test">
+    <td class="passedSummary">
+      ${apiname}
+    </td>
+    <td class="passedSummary">
+      $totalTCs
+    </td>
+
+    #if ($totalFailed>0)
+    	<td class="failedSummary"> 
+	      $totalPassed
+	    </td>
+    #else
+		  <td class="passedSummary"> 
+	      $totalPassed
+	    </td>	    
+    #end
+
+    #if ($totalFailed>0)
+    	<td class="failedSummary"> 
+	      $totalFailed
+	    </td>
+    #else
+		  <td class="passedSummary"> 
+	      $totalFailed
+	    </td>	    
+    #end
+
+	#set ($passRate = ($totalPassed * 100) / $totalTCs)
+    #if ($totalFailed>0)
+    	<td class="failedSummary"> 
+	      $passRate%
+	    </td>
+    #else
+		  <td class="passedSummary"> 
+	      100%
+	    </td>	    
+    #end
+        
+	#set ($failRate = ($totalFailed * 100) / $totalTCs)
+    #if ($totalFailed>0)
+    	<td class="failedSummary"> 
+	      $failRate%
+	    </td>
+    #else
+		  <td class="passedSummary"> 
+	      0%
+	    </td>	    
+    #end
+    
+  </tr>
+  
+</table>
+
+#foreach ($suite in $suites)
+<table class="overviewTable">
+  #set ($suiteId = $velocityCount)
+  #set ($totalTests = 0)
+  #set ($totalPassed = 0)
+  #set ($totalSkipped = 0)
+  #set ($totalFailed = 0)
+  
+  <tr>
+    <th colspan="4" class="header suite">
+      <div class="suiteLinks">
+        #if (!$suite.invokedMethods.empty)
+        ##<a href="suite${suiteId}_chronology.html">$messages.getString("chronology")</a>
+        #end
+        #if ($utils.hasGroups($suite))
+        <a href="suite${suiteId}_groups.html">$messages.getString("groups")</a>
+        #end        
+      </div>
+      ${suite.name}
+    </th>
+  </tr>
+  <tr class="columnHeadings">
+    ##<td>&nbsp;</td>
+    <th class="columnHeadingsLeft">Test Scenario</th>
+    <th>$messages.getString("duration")</th>
+    <th>Status</th>
+    <th class="columnHeadingsCenter">User Story ID</th>
+
+  </tr>
+  #foreach ($result in $suite.results)
+  #set ($notPassedTests = $result.testContext.skippedTests.size() + $result.testContext.failedTests.size())
+  #set ($total = $result.testContext.passedTests.size() + $notPassedTests)
+  #set ($totalTests = $totalTests + 1)
+  #set ($totalPassed = $totalPassed + $result.testContext.passedTests.size())
+  #set ($totalSkipped = $totalSkipped + $result.testContext.skippedTests.size())
+  #set ($totalFailed = $totalFailed + $result.testContext.failedTests.size())
+  #set ($failuresExist = $result.testContext.failedTests.size()>0 || $result.testContext.failedConfigurations.size()>0)
+
+  #if (($onlyReportFailures && $failuresExist) || (!$onlyReportFailures))
+  <tr class="test">
+    <td class="test">
+      <a href="suite${suiteId}_test${velocityCount}_results.html">${result.testContext.name}</a>
+    </td>
+    <td class="duration">
+      $utils.formatDuration($utils.getDuration($result.testContext))s
+    </td>
+
+    #if (($result.testContext.skippedTests.size() + $result.testContext.failedTests.size()) > 0)
+    <td class="failed number">Failed</td>
+    #else
+    <td class="passed number">Passed</td>
+    #end
+
+    
+    #set ($reqId = $result.testContext.test.parameters.story_id)
+    #if ($reqId.length()>0)
+    	<td class="reqId"> 
+	      <a href="https://wfs-jira.wellsfargo.com:8443/browse/$reqId" target="_blank">${reqId}</a>
+	    </td>
+    #else
+		  <td class="reqId"> 
+	      -
+	    </td>	    
+    #end
+    
+    
+  </tr>
+  #end
+  #end
+
+  <tr class="suite">
+    <td colspan="2" class="totalLabel">$messages.getString("total")</td>
+    <td class="totalLabel">$totalTests</td>
+  </tr>
+</table>
+#end
+</body>
+</html>

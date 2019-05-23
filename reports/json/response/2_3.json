@@ -1,0 +1,59 @@
+{
+  "birth_date": "1957-05-09",
+  "is_team_member": false,
+  "marital_status": "UNMARRIED",
+  "esign_status": "ACCEPTED",
+  "esign_date": "2012-10-11",
+  "name": {
+    "full_name": "JODIE MUSCAT"
+  },
+  "addresses": [
+    {
+      "address_use_code": "CUSTOMER_RESIDENCE",
+      "address_line_1": "5539 27TH AVE S",
+      "city": "MINNEAPOLIS",
+      "state_code": "MN",
+      "postal_code": "554171933",
+      "is_current_address": true
+    },
+    {
+      "address_use_code": "CUSTOMER_RESIDENCE",
+      "address_line_1": "6639 27TH AVE N",
+      "address_line_2": "Washington",
+      "city": "STONE MOUNTAIN",
+      "state_code": "GA",
+      "postal_code": "30087",
+      "region": "region1",
+      "country_code": "cc1",
+      "country": "USA",
+      "is_current_address": true
+    }
+  ],
+  "phones": [
+    {
+      "phone_use": "PRIMARY_BUSINESS_PHONE",
+      "phone_number": "6103176913",
+      "is_primary_phone": true
+    },
+    {
+      "phone_use": "CELL_PHONE",
+      "phone_number": "9495480855",
+      "is_primary_phone": false
+    },
+    {
+      "phone_use": "CELL_PHONE",
+      "phone_number": "9495480854",
+      "is_primary_phone": false
+    }
+  ],
+  "emails": [
+    {
+      "email": "2test1@purple.wf.com",
+      "email_use": "ALTERNATE"
+    },
+    {
+      "email": "test1@purple.wf.com",
+      "email_use": "PRIMARY"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+*                        {font-family: Garamond, Arial; font-size: .7em; padding: 0; margin: 0; text-align: justify;}
+
+p                        {font-size: .7em; text-align: justify;}
+.header                  {width: 90%; font-weight: bold; font-family: "font-family: "calibri", Garamond, Arial; font-size: 2em; font-weight: bold; text-align: justify; padding-top: 3em; padding-bottom: 3em; padding-left: 3em;}
+.collapsable			 {display: none;}
+.pagebreak 				 { page-break-before: always; } /* page-break-after works, as well */
+.passed                  {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #44aa44; }
+.skipped                 {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #ffaa00; }
+.failed                  {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #ff4444; }
+.Passed                  {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #88ee88; border: 1px solid #ffffff; }
+.Skipped                 {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #ffff77; border: 1px solid #ffffff; }
+.Failed                  {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #ff8888; border: 1px solid #ffffff; }
+.failedConfig            {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #800000; color: #ffffff}
+.skippedConfig           {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #cc6600; color: #ffffff}
+.totalLabel              {font-size: .8em; font-family: "calibri", Garamond, Arial; font-weight: bold; background-color: #ffffff; color: #0d0d0d;}
+
+.suite                   {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #3d60bb; font-weight: bold; text-align: justify;color: #fff7f8;}
+.summary				 {font-size: 0.90em; font-weight: bold;  color: #e9f0ff;}
+.test                    {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #eeeeee; padding-left: 2em; width: 90% }
+.test .passed            {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #88ee88; }
+.test .skipped           {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #ffff77; }
+.test .failed            {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #ff8888; }
+.group                   {font-size: .8em; font-family: "calibri", Garamond, Arial; background-color: #cccccc; color: #000000; font-weight: bold;}
+.suiteLinks              {float: left; font-weight: normal; vertical-align: middle;}
+.suiteLinks a            {color: #ffffff; margin-left: .5em;}
+.passRate                {font-size: .8em; font-family: "calibri", Garamond, Arial;font-weight: bold;  width: 20%}
+.duration                {font-size: .8em; font-family: "calibri", Garamond, Arial;  }
+.thread                  {font-size: .8em; font-family: "calibri", Garamond, Arial; white-space: nowrap;}
+.passedSummary           {font-size: .8em; color: #020202; margin-left: .5em; width: 90%}
+.failedSummary           {font-size: .8em; color: #ff2423; margin-left: .5em; width: 90%}
+
+
+.resultsTable            {font-size: .2em; border: 0; width: 100%; margin-top: 1.8em; line-height: 1.7em; border-spacing: 0..8em;}
+/*.resultsTable .method    {width: 18em;}
+.resultsTable .duration  {width: 6em;}*/
+.resultsTable td         {vertical-align: top; padding: 0 .8em;}
+.resultsTable th         {padding: 0 .5em;}
+/*.resultsTable tr	 	 {color: #ffffff;}*/
+.number                  {text-align: left;}
+.zero                    {font-weight: normal;}
+/*.columnHeadings          {font-size: .8em; font-family: Arial; font-weight: bold;}*/
+.columnHeadingsLeft      {font-size: .8em; text-align: left; font-weight: bold;}
+.columnHeadings      {font-size: .8em; text-align: left; font-weight: bold;}
+.columnHeadings th       {font-weight: normal;}
+
+.configTable             {border: 1px solid #800000; color: #800000; margin-bottom: 1.5em;}
+
+#sidebarHeader           {padding: 1.8em .8em; margin: 0 -.8em 1.8em -.8em;}
+#suites                  {font-size: .8em; font-family: "calibri", Garamond, Arial; line-height: 1.7em; border-spacing: 0..8em; width: 100%;}
+.tests                   {display: table-row-group;}
+.header.suite            {cursor: pointer; clear: left; height: 1.214em; margin-top: 1px;}
+div.test                 {margin-top: 0..8em; clear: left; font-size: 1.3em;}
+
+/* The +/- toggle used in the navigation frame. */
+.toggle                  {font-family: monospace; font-weight: bold; padding-left: 2px; padding-left: 5px; color: #777777;}
+.successIndicator        {float: left; font-family: monospace; font-weight: bold; padding-left: 2px; color: #44aa44;}
+.skipIndicator           {float: left; font-family: monospace; font-weight: bold; padding-left: 2px; color: #ffaa00;}
+.failureIndicator        {float: left; font-family: monospace; font-weight: bold; padding-left: 2px; color: #ff4444;}
+
+
+/* These classes are for information about an individual test result. */
+.result                  {font-size: .5em; vertical-align: middle; color: #800000;}
+.dependency              {font-family: Lucida Console, Monaco, Arial New, monospace; font-weight: bold;}
+.arguments               {color: #800000; font-family: Lucida Console, Monaco, Arial New, monospace; font-weight: bold;}
+.arguments-wrapper		 {display: none;}
+.testOutput              {font-family: Lucida Console, Monaco, Arial New, monospace; color: #666666;}
+.stackTrace              {font-size: 0.8em; line-height: 1.2em; margin-left: 2em; display: none;}
+.stackTrace .stackTrace  {font-size: inherit;}
+
+.description             {font-size: .8em; border-bottom: 1px dotted #006699;}
+
+#meta                    {font-size: .7em; text-align: justify; float: left;}
+#systemInfo              {font-family: "calibri", Garamond, Arial; font-size: .8em; color: #666666;}
+
+/* Reporter log output (individual test ouput is style by "testOutput" above). */
+#log                     {font-family: Lucida Console, Monaco, Arial New, monospace; font-size: .9em; margin-top: 1.8em;}
+

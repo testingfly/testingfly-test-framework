@@ -1,0 +1,20 @@
+{
+  "total_files": 1,
+  "files": [
+    {
+      "ach_file_originator_id": "SMARTDEC01",
+      "ach_file_token": "0132RDEW5XU76HN5DDM3ROLJPXCNYSPPILLPDPLG4TQVQZIITR2RCIJKJT5KK3QTHCANNWFJNA3DXJU",
+      "file_create_datetime": "2018-12-03T00:00:00Z",
+      "file_status": "PROCESSING",
+      "file_exception_flag": "N",
+      "manual_file_flag": "N",
+      "debit_amount": 1000,
+      "debit_count": 10,
+      "credit_amount": 1000,
+      "credit_count": 10,
+      "total_amount": 2000,
+      "total_count": 20,
+      "total_batch_count": 4
+    }
+  ]
+}

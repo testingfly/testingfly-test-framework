@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "error_code": "400-008",
+      "description": "'content_type' is missing from the body of the request.",
+      "field_name": "your_mortgage.content_type",
+      "api_specification_url": "https://devstore-dev.wellsfargo.com/store"
+    }
+  ]
+}

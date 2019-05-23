@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "error_code": "400-012",
+      "description": "'appointment_type' contains an invalid value.",
+      "field_name": "appointment_type",
+      "field_value": "NEWCONSXXXX",
+      "api_specification_url": "https://devstore.wellsfargo.com/store"
+    }
+  ]
+}

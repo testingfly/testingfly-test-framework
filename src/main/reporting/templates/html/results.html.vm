@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$messages.locale.language" lang="$messages.locale.language">
+<head>
+  <title>$meta.reportTitle - $result.testContext.name</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  #if ($meta.stylesheetPath)
+  <link href="custom.css" rel="stylesheet" type="text/css" />
+  #end
+  <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>$result.testContext.name</h1>
+<p>
+  $messages.getString("testDuration"): $utils.formatDuration($utils.getDuration($result.testContext))s
+</p>
+
+#set ($componentid = 1)
+#set ($cls = "odd")
+#if ($allTests.size() > 0)
+  <table class="resultsTable collapse" data-toggle="collapse">
+  	<colgroup><col width="25%"/><col width="50%"/><col/></colgroup>
+    <tr><th colspan="3" class="header generic">Components</th></tr>
+    #foreach ($testClass in $allTests.keySet())
+      #if ($passedTests.containsKey($testClass))
+      	   #set ($tempStatus = "Passed")
+      #elseif ($failedTests.containsKey($testClass))
+      		#set ($tempStatus = "Failed")
+      #elseif ($skippedTests.containsKey($testClass))
+	  		#set ($tempStatus = "Skipped")
+      #end
+      
+      #if ($componentid % 2 == 0)
+      	#set ($cls = "odd")
+      #else
+      	#set ($cls = "even")
+      #end
+      
+      <tr class="collapsable-header $cls">
+      	<td>$componentid</td>
+      	<td>$testClass.getXmlClass().getIncludedMethods().get(0).getLocalParameters().get("componentname")</td>
+      	<td/>
+      	<td align="center" class="$tempStatus">$tempStatus</td>
+      	##<td>$utils.formatDuration($testResult.startMillis, $testResult.endMillis)s</td>
+      
+  	   ##<td colspan="3" class="$tempStatus">$componentid. $testClass.getXmlClass().getIncludedMethods().get(0).getLocalParameters().get("componentname")</td>
+      </tr>
+      #set ($classResults = $allTests.get($testClass))
+      #parse ($classResultsTemplatePath)
+      #set ($componentid = $componentid + 1)
+	#end
+  </table>
+#end
+  
+</body>
+</html>

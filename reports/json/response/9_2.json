@@ -1,0 +1,16 @@
+{
+  "item_count": 1,
+  "webhooks": [
+    {
+      "webhook_id": "G123-001",
+      "webhook_name": "The First Webhook",
+      "url": "https://developer.wellsfargo.com",
+      "start_datetime": "2018-10-12T23:00:00Z",
+      "status": "ACTIVE",
+      "signature_token": "12345678-AAAA-1234-1234-123456789101",
+      "events": [
+        "sandbox.hello.wellsfargo"
+      ]
+    }
+  ]
+}

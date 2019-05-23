@@ -1,0 +1,386 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.testingfly.javaexcel</groupId>
+  <artifactId>testfly-test-framework</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>JAVAEXCEL-TEMPLATE</name>
+  
+  
+<build>
+	<pluginManagement>
+		<plugins>
+	      <plugin>
+			  <groupId>org.codehaus.mojo</groupId>
+			  <artifactId>exec-maven-plugin</artifactId>
+			  <version>1.2.1</version>
+			  <executions>
+			    <execution>
+			      <goals>
+			        <goal>java</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			  <configuration>
+			    <mainClass>com.javaexcel.testrunner.TestRunner</mainClass>
+			    <arguments>
+			      <argument>${Environment}</argument>
+			      <argument>${tagName}</argument>
+			      <argument>${Authentication_Key}</argument>
+			      <argument>${gatewayEntityID}</argument>
+			      <argument>${gatewayUserID}</argument>
+			      <argument>${TestFile}</argument>
+			      <argument>${jenkinsURL}</argument>
+			      <argument>${username}</argument>
+			      <argument>${password}</argument>
+			      <argument>${uploadToALM}</argument>
+			      <argument>${enableAutoTCs}</argument>
+			      <argument>${API_Name}</argument>
+			    </arguments>
+			      
+				<systemPropertyVariables>
+					<propertyName></propertyName>
+				</systemPropertyVariables>
+	  		</configuration>
+			</plugin>
+			
+		      <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-surefire-plugin</artifactId>
+		            <configuration>
+
+				        <properties>
+				            <property>
+				                <name>usedefaultlisteners</name>
+				                <key>false</key>
+				            </property>				          
+				        </properties>
+				    </configuration>
+		        <version>2.19.1</version>
+		      </plugin>
+			
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			
+				
+				    <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-install-plugin</artifactId>
+            <version>2.5.1</version>
+            <executions>
+                <execution>
+                    <id>inst_1</id>
+                    <phase>install</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+					<configuration>
+			
+			              <file>${basedir}/src/test/resources/custom-jars/testng-6.9.12-Custom.9.jar</file>
+			                <groupId>org.testng</groupId>
+						    <artifactId>testng</artifactId>
+						    <version>6.9.12-Custom.9</version>
+						    <packaging>jar</packaging>
+			              
+	
+					</configuration>
+                </execution>
+                
+            </executions>
+        </plugin> 
+
+			  
+		</plugins>
+	</pluginManagement>
+</build>
+		<properties>
+  		<!-- Define the version of OPEN HTML TO PDF in the properties section of your POM. -->  	       
+  		<openhtml.version>0.0.1-RC15</openhtml.version>
+  		</properties>
+  	
+  	
+  <dependencies>
+
+    
+    <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+	<dependency>
+	    <groupId>commons-lang</groupId>
+	    <artifactId>commons-lang</artifactId>
+	    <version>2.6</version>
+	</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.9.3</version>
+	</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.12-Custom.9</version>
+			<scope>compile</scope>
+			<!-- systemPath>${project.basedir}/src/test/resources/custom-jars/testng-6.9.12-Custom.9.jar</systemPath-->
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.5.9</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.10</version>
+		</dependency>
+
+		
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+		    <groupId>com.googlecode.json-simple</groupId>
+		    <artifactId>json-simple</artifactId>
+		    <version>1.1.1</version>
+		</dependency>
+		
+
+		
+		<!-- https://mvnrepository.com/artifact/com.codoid.products/fillo -->
+		<dependency>
+		    <groupId>com.codoid.products</groupId>
+		    <artifactId>fillo</artifactId>
+		    <version>1.18</version>
+		</dependency>
+		
+	
+		
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.5</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.googlecode.jatl/jatl -->
+		<dependency>
+		    <groupId>com.googlecode.jatl</groupId>
+		    <artifactId>jatl</artifactId>
+		    <version>0.2.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.12</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-exec -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-exec</artifactId>
+		    <version>1.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>3.11.0</version>
+		</dependency-->
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.7</version>
+		</dependency>
+		
+
+		<!-- https://mvnrepository.com/artifact/com.itextpdf.tool/xmlworker -->
+ 		<dependency>
+		    <groupId>com.itextpdf.tool</groupId>
+		    <artifactId>xmlworker</artifactId>
+		    <version>5.4.0</version>
+		</dependency>
+		
+				<!-- https://mvnrepository.com/artifact/org.allcolor.yahp/yahp -->
+		<!-- https://mvnrepository.com/artifact/com.google.code.maven-play-plugin.org.allcolor.yahp/yahp -->
+<!-- 		<dependency>
+		    <groupId>com.google.code.maven-play-plugin.org.allcolor.yahp</groupId>
+		    <artifactId>yahp</artifactId>
+		    <version>1.3</version>
+		</dependency> -->
+		
+		<!-- https://mvnrepository.com/artifact/com.google.code.maven-play-plugin.org.allcolor.yahp/yahp-internal -->
+<!-- 		<dependency>
+		    <groupId>com.google.code.maven-play-plugin.org.allcolor.yahp</groupId>
+		    <artifactId>yahp-internal</artifactId>
+		    <version>1.3-patched-play-pdf-0.8</version>
+		</dependency> -->
+
+		
+		<dependency>
+	        <groupId>com.uttesh</groupId>
+	        <artifactId>pdfngreport</artifactId>
+	        <version>2.1.3</version>
+		</dependency>
+		
+		       <dependency>
+            <groupId>jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.0.13</version>
+        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/fop -->
+		<dependency>
+		    <groupId>org.apache.xmlgraphics</groupId>
+		    <artifactId>fop</artifactId>
+		    <version>2.0</version>
+		</dependency>
+
+        <dependency>
+            <groupId>org.apache.avalon.framework</groupId>
+            <artifactId>avalon-framework-api</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avalon.framework</groupId>
+            <artifactId>avalon-framework-impl</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+
+		
+		<!-- https://mvnrepository.com/artifact/com.beust/jcommander -->
+		<dependency>
+		    <groupId>com.beust</groupId>
+		    <artifactId>jcommander</artifactId>
+		    <version>1.72</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+		<dependency>
+		    <groupId>com.lowagie</groupId>
+		    <artifactId>itext</artifactId>
+		    <version>2.0.7</version>
+		</dependency>
+
+		<dependency>
+                     <groupId>com.github.java-json-tools</groupId>
+                     <artifactId>json-schema-validator</artifactId>
+                     <version>2.2.8</version>
+       </dependency>
+				
+		<!-- https://mvnrepository.com/artifact/com.itextpdf/io -->
+		<dependency>
+		    <groupId>com.itextpdf</groupId>
+		    <artifactId>io</artifactId>
+		    <version>7.1.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.5.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+		    <groupId>com.google.code.gson</groupId>
+		    <artifactId>gson</artifactId>
+		    <version>2.8.5</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+		<dependency>
+		    <groupId>javax.ws.rs</groupId>
+		    <artifactId>javax.ws.rs-api</artifactId>
+		    <version>2.1.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+		<dependency>
+		    <groupId>org.glassfish.jersey.core</groupId>
+		    <artifactId>jersey-client</artifactId>
+		    <version>2.22.1</version>
+		</dependency>
+
+		
+		<dependency>
+		    <groupId>commons-collections</groupId>
+		    <artifactId>commons-collections</artifactId>
+		    <version>3.2.2</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.glassfish.jersey.media</groupId>
+		    <artifactId>jersey-media-jaxb</artifactId>
+		    <version>2.22.1</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson -->
+		<dependency>
+		    <groupId>org.glassfish.jersey.media</groupId>
+		    <artifactId>jersey-media-json-jackson</artifactId>
+		    <version>2.27</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		    <version>1.6</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.apache.velocity</groupId>
+		    <artifactId>velocity-tools</artifactId>
+		    <version>2.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.dataformat</groupId>
+		    <artifactId>jackson-dataformat-yaml</artifactId>
+		    <version>2.9.8</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20180813</version>
+		</dependency>
+
+	  </dependencies>
+   	  
+</project>

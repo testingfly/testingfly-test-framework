@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "error_code": "400-015",
+      "description": "'bank_routing_number' cannot have fewer than 9 character(s).",
+      "field_name": "bank_routing_number",
+      "field_value": "123",
+      "api_specification_url": "https://devstore.wellsfargo.com/store"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$messages.locale.language" lang="$messages.locale.language">
+<head>
+  <title>$meta.reportTitle - $result.testContext.name</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  #if ($meta.stylesheetPath)
+  <link href="custom.css" rel="stylesheet" type="text/css" />
+  #end
+  <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<div id="meta">
+ 	##$messages.getString("generatedBy")
+    ##foreach ($result in $suites.get(0).results)
+	    #set ($env = $result.testContext.test.parameters.environment)
+	    #set ($apiname = $result.testContext.test.parameters.apiname)
+	    #set ($tagname = $result.testContext.test.parameters.tagName)
+	    #set ($branch = $result.testContext.test.parameters.branch)
+    ##end
+  	Generated in ${env} with tagName ${tagname} and branch ${branch}
+  
+  $messages.getString("atTime") $meta.reportTime $messages.getString("onDate") $meta.reportDate
+  <br /><span id="systemInfo">$meta.user&nbsp;/&nbsp;$meta.javaInfo&nbsp;/&nbsp;$meta.platform</span>
+</div>
+
+<p>
+    <a href="overview.html"><img class="img" width="29" height="23" title="Home" src="home_button.ico"></a>
+    <a href="suite1_test${result.testContext.test.parameters.previous}_results.html"><img class="img" width="30" height="25" title="Previous" src="back_button.ico"></a>
+    <a href="suite1_test${result.testContext.test.parameters.next}_results.html"><img class="img" width="30" height="25" title="Next" src="forward_button.ico"></a>
+</p>
+
+<h1>$result.testContext.name</h1>
+<p>
+  $messages.getString("testDuration"): $utils.formatDuration($utils.getDuration($result.testContext))s
+</p>
+
+#set ($componentid = 1)
+#set ($cls = "odd")
+#if ($allTests.size() > 0)
+  <table class="resultsTable collapse" data-toggle="collapse">
+  	<colgroup><col width="25%"/><col width="50%"/><col/></colgroup>
+  ##  <tr><th colspan="3" class="header generic">Components</th></tr>
+    
+    <tr>
+    <th colspan="7" class="header suite">
+	Test Workflow
+    </th>
+  </tr>
+    
+    #foreach ($testClass in $allTests.keySet())
+      #if ($passedTests.containsKey($testClass))
+      	   #set ($tempStatus = "Passed")
+      #elseif ($failedTests.containsKey($testClass))
+      		#set ($tempStatus = "Failed")
+      #elseif ($skippedTests.containsKey($testClass))
+	  		#set ($tempStatus = "Skipped")
+      #end
+      
+      #if ($componentid % 2 == 0)
+      	#set ($cls = "odd")
+      #else
+      	#set ($cls = "even")
+      #end
+      
+      <tr class="collapsable-header $cls">
+      	<td>$componentid</td>
+      	<td>$testClass.getXmlClass().getIncludedMethods().get(0).getLocalParameters().get("componentname")</td>
+      	<td/>
+      	<td align="center" class="$tempStatus">$tempStatus</td>
+      	##<td>$utils.formatDuration($testResult.startMillis, $testResult.endMillis)s</td>
+      
+  	   ##<td colspan="3" class="$tempStatus">$componentid. $testClass.getXmlClass().getIncludedMethods().get(0).getLocalParameters().get("componentname")</td>
+      </tr>
+      #set ($classResults = $allTests.get($testClass))
+      #parse ($classResultsTemplatePath)
+      #set ($componentid = $componentid + 1)
+	#end
+  </table>
+#end
+  
+</body>
+</html>

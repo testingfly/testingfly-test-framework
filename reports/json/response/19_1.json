@@ -1,0 +1,12 @@
+{
+  "client_reference": "54321",
+  "transaction_datetime": "2019-04-16T19:27:00Z",
+  "validation_type": "ACCOUNT STATUS",
+  "validation_channel": "CUSTOMER PRESENT FOR TRANSACTION",
+  "bank_routing_number": "122199983",
+  "bank_account_number": "91021511010",
+  "check_number": "2000",
+  "check_amount": "123456789.99",
+  "check_transaction_code": 123456,
+  "calculated_response": "N"
+}

@@ -1,0 +1,20 @@
+{
+  "accounts": [
+    {
+      "bank_id": "121000248",
+      "account_number": "2000003398984",
+      "status": "AUTHORIZED",
+      "account_type": "DEMAND_DEPOSIT",
+      "account_name": "LOTUS FINANCIAL CO AGENCY CORP",
+      "currency_code": "USD",
+      "balances": [
+        {
+          "balance_type": "OPENING_AVAILABLE",
+          "balance_amount": 0.0,
+          "as_of_date": "2019-04-16",
+          "bai_type_code": "040"
+        }
+      ]
+    }
+  ]
+}

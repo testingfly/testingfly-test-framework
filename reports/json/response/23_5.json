@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "error_code": "400-012",
+      "description": "'account_type' contains an invalid value.",
+      "field_name": "account_type",
+      "field_value": "XXXXXXXXXXXXXX",
+      "api_specification_url": "https://devstore.wellsfargo.com"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "accounts": [
+    {
+      "account_id": "858d15c11254e4a64161a88d45d273062cee98a4b018d48caee972fa50201c86",
+      "property_type": "SINGLE_FAMILY",
+      "property_type_usage": "PRIMARY_RESIDENCE",
+      "original_purchase_price": 176000.0,
+      "principal_balance": 97472.76,
+      "principal_balance_as_of_date": "2018-03-05",
+      "currency_code": "USD",
+      "address": {
+        "address_line_1": "157  5TH ST APT 21555",
+        "city": "SAN FRANCISCO",
+        "state_code": "CA",
+        "postal_code": "94103 2919",
+        "county_code": "053"
+      }
+    }
+  ]
+}

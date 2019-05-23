@@ -1,0 +1,30 @@
+{
+  "client_reference": "54321",
+  "validation_type": "ACCOUNT OWNERSHIP",
+  "validation_channel": "CUSTOMER NOT PRESENT",
+  "transaction_datetime": "2019-04-16T19:26:22Z",
+  "bank_routing_number": "122199983",
+  "bank_account_number": "10500008954",
+  "account_owner": {
+    "condition_code": "000",
+    "name_match": "C",
+    "first_name_match": "N",
+    "last_name_match": "N",
+    "middle_name_match": "U",
+    "name_suffix_match": "U",
+    "name_prefix_match": "U",
+    "business_name_match": "U",
+    "address_match": "C",
+    "city_match": "C",
+    "state_match": "N",
+    "zip_match": "C",
+    "home_phone_match": "U",
+    "work_phone_match": "U",
+    "tax_id_match": "C",
+    "date_of_birth_match": "C",
+    "document_id_type_match": "N",
+    "document_id_number_match": "C",
+    "document_issuer_match": "N",
+    "overall_match_score": "0"
+  }
+}

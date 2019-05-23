@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "error_code": "400-008",
+      "description": "'payment_id' is missing from the body of the request.",
+      "field_name": "payment_id",
+      "api_specification_url": "https://developer.wellsfargo.com"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "accounts": [
+    {
+      "account_id": "15279ac91fc33e0c88e392b2aa8a98456f7bff6e93c562878cc13c306568d0db",
+      "account_type": "MONEYMARKET",
+      "display_name": "Private Bank Dividend Checking",
+      "is_command_account": false,
+      "masked_account_number": "4202",
+      "nickname": "Private Bank Dividend Checking",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 457342.21,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 457342.21,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "e08bca93697f5abdf9ebed82532122c2dc7fc623dca67cccb5be1280d8e46052",
+      "account_type": "SAVINGS",
+      "display_name": "Business Market Rate Savings",
+      "is_command_account": false,
+      "masked_account_number": "8439",
+      "nickname": "Business Market Rate Savings",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 33286.18,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 33286.18,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "a0f05efbac2bb39f8cc9246bdf5e1eff3ebb7084b573e4ff92ec31848c655acb",
+      "account_type": "TIME",
+      "account_sub_type": "RETIREMENT",
+      "display_name": "Retirement Time Account",
+      "is_command_account": false,
+      "masked_account_number": "8660",
+      "nickname": "Retirement Time Account",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        },
+        {
+          "account_owner": "Merry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 30047.41,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 29880.29,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "9cdf739cf37c456976045971deb3878c6a2e2e3679c44d95547ca23b895b3b53",
+      "account_type": "MONEYMARKET",
+      "display_name": "Private Bank Dividend Checking",
+      "is_command_account": false,
+      "masked_account_number": "6766",
+      "nickname": "Private Bank Dividend Checking",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 64751.38,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 64743.32,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "558fca00a1165dd1fcc6608f62d9f9aeb4ffbe32a5fec7b1b6bef3f4fbb3b41c",
+      "account_type": "SAVINGS",
+      "display_name": "Business Platinum Savings",
+      "is_command_account": false,
+      "masked_account_number": "1626",
+      "nickname": "Business Platinum Savings",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 151790.48,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 151790.48,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "dca37bf66f6f3df6c591a5a8870a7969ea7da71bd21d3d89cd691186bced0f5c",
+      "account_type": "TIME",
+      "account_sub_type": "CD",
+      "display_name": "Consumer Time Account",
+      "is_command_account": false,
+      "masked_account_number": "7339",
+      "nickname": "Consumer Time Account",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        },
+        {
+          "account_owner": "Merry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 5968.67,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 5805.07,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "123384b5403e71de46788b831a00be6ab127fee97bf64777a454cababc91d3b7",
+      "account_type": "CHECKING",
+      "display_name": "Analyzed Business Checking Plus",
+      "is_command_account": false,
+      "masked_account_number": "9979",
+      "nickname": "Analyzed Business Checking Plus",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        }
+      ],
+      "balances": {
+        "available_balance": {
+          "amount_type": {
+            "amount": 62906.07,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        },
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 62906.07,
+            "currency_code": "USD"
+          },
+          "as_of_date": "2017-04-26"
+        }
+      }
+    },
+    {
+      "account_id": "c98b6c6b9b4e4dce2abb777290fcefd51717844db2716a1ea0340b649100efc5",
+      "account_type": "INVESTMENT",
+      "display_name": "Standard Brokerage Account",
+      "is_command_account": false,
+      "masked_account_number": "2184",
+      "nickname": "Standard Brokerage",
+      "status": "OPEN",
+      "account_owner_list": [
+        {
+          "account_owner": "Henry Wells"
+        },
+        {
+          "account_owner": "Merry Wells"
+        }
+      ],
+      "balances": {
+        "previous_day_posted_balance": {
+          "amount_type": {
+            "amount": 0.0,
+            "currency_code": "USD"
+          }
+        }
+      }
+    }
+  ]
+}
