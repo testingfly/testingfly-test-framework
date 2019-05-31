@@ -10,7 +10,7 @@ public class Configurables {
 
 	
 	//General Config
-	public static String projectName = 						Config.getProp("API_Name","WFG-API-TEST"); 
+	public static String projectName = 						Config.getProp("API_Name","API-TEST"); 
 	public static String testFileName = 					Config.getProp("TestFile");
 	public static String testsFilePath = 					Config.getProp("Path","src/test/resources/test-data/");
 	public static String dataFilePath = 					Config.getProp("DataFile", testsFilePath);

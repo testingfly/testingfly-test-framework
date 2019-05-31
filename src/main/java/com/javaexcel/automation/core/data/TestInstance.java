@@ -2,7 +2,7 @@ package com.javaexcel.automation.core.data;
 
 import com.javaexcel.automation.core.utils.TestUtils;
 
-public class TestInstance implements ITestInstance{
+public class TestInstance implements ITestInstance {
 
 	protected String id;
 	protected String testCaseID;
@@ -11,7 +11,7 @@ public class TestInstance implements ITestInstance{
 	protected String status;
 	protected String name;
 	protected String resource;
-	
+
 	public String getResource() {
 		return this.resource;
 	}
@@ -19,15 +19,14 @@ public class TestInstance implements ITestInstance{
 	public void setResource(String resource) {
 		this.resource = resource;
 	}
-	
 
 	protected ITestSet testSet;
 
-	public TestInstance(ITestSet testSet){
+	public TestInstance(ITestSet testSet) {
 		this.testSet = testSet;
 	}
 
-	public TestInstance(ITestSet testSet, String name){
+	public TestInstance(ITestSet testSet, String name) {
 		this(testSet);
 		this.name = name;
 		this.status = "No Run";
@@ -37,19 +36,16 @@ public class TestInstance implements ITestInstance{
 	public String getID() {
 		return id;
 	}
-	
-
 
 	@Override
 	public void setID(String id) {
 		this.id = id;
 	}
-	
+
 	@Override
 	public String getTCID() {
 		return testCaseID;
 	}
-	
 
 	@Override
 	public void setTCID(String testCaseID) {
@@ -98,14 +94,12 @@ public class TestInstance implements ITestInstance{
 
 	@Override
 	public String getKeyValue() {
-		switch(TestUtils.getTestFilterType()){
+		switch (TestUtils.getTestFilterType()) {
 		case Name:
 		default:
 			return getName();
 		case TestID:
 			return getTestID();
-		//case TestCaseID:
-			//return getTCID();
 		case ConfigurationID:
 			return getConfigID();
 		}
@@ -120,10 +114,5 @@ public class TestInstance implements ITestInstance{
 	public void setConfigID(String configID) {
 		this.configID = configID;
 	}
-
-	
-
-
-
 
 }

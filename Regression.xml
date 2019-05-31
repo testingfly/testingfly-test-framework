@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?><!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
 <suite name="Regression">
 	<parameter name="apiname" value="Regression"/>
-	<parameter name="pdfname" value="API_Test_Result_DEV_Smoke_201905311226.pdf"/>
+	<parameter name="pdfname" value="API_Test_Result_DEV_Smoke_201905311523.pdf"/>
 	<parameter name="tagName" value="Smoke"/>
 	<parameter name="branch" value="N/A"/>
 	<parameter name="alm" value="http://dummy.com/qcbin/start_a.jsp"/>

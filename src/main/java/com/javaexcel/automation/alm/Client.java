@@ -1,5 +1,6 @@
 package com.javaexcel.automation.alm;
 
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
@@ -17,7 +18,11 @@ import com.javaexcel.automation.alm.model.*;
 import com.javaexcel.automation.core.data.Configurables;
 import com.javaexcel.automation.core.table.Record;
 import com.javaexcel.automation.core.utils.Utils;
-
+/**
+ * 
+ * @author rossmeitei
+ *
+ */
 public class Client
 {
     private final Config config;

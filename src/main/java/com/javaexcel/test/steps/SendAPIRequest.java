@@ -23,7 +23,7 @@ import com.javaexcel.automation.core.utils.Utils;
 import com.javaexcel.tests.base.APITestBase;
 /**
  * 
- * @author u381126
+ * @author rossmeitei
  * Processes resource path, header params, chained request data
  * Sends API request
  */
