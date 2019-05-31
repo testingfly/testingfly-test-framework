@@ -1,9 +1,0 @@
-{
-  "account_number": "108042870",
-  "routing_number": "121042882",
-  "item_type": "PAID_CHECK",
-  "start_posting_date": "20160101",
-  "end_posting_date": "20160530",
-  "min_amount": 1,
-  "max_amount": 100
-}

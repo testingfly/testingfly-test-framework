@@ -54,13 +54,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.javaexcel.automation.core.data.Config;
 
 import junit.framework.Assert;
 import org.apache.commons.lang.StringEscapeUtils;
 
 /**
  * 
- * @author u381126
+ * @author rossmeitei
  *
  */
 
@@ -129,7 +130,7 @@ public class RestClient {
  */
 	@SuppressWarnings({ "unused", "deprecation" })
 	public void postDataToServer(String cr_reponse_header_id,Map<String, String> resource_params, String queryParams, String strRequestMethod,String url,String inputFile,String responseXmlFilePath,String certificateFilePath,String certificatePassword,
-			String jksfilePath,String jkspwd,String Header,String tokenUrl,String tokenAuthKey, String contentType, String scopeOverride)
+			String jksfilePath,String jkspwd,String Header,String tokenUrl,String tokenAuthKey, String scopeOverride)
 	{
 	
 		File oFile= null;
@@ -201,7 +202,7 @@ public class RestClient {
 			
 			TokenDetails td = null;
 			
-			if (!url.contains("8443")){
+			if (!url.contains(Config.getProp("tomcatPortNo"))){
 				td = generateToken(tokenUrl, tokenAuthKey, httpclient, scopeOverride);
 			}
 			
@@ -664,7 +665,7 @@ public String jsonToHtml( Object obj ) {
 	public TokenDetails generateToken(String tokenUrl, String tokenAuthKey, CloseableHttpClient httpclient, String scope){
 		String json="";
 		
-		if(tokenUrl.contains("8443")){
+		if(tokenUrl.contains(Config.getProp("tomcatPortNo"))){
 			return null;
 		}
 		try{

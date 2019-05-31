@@ -33,7 +33,7 @@ public class SendAPIRequest extends APITestBase {
 	String responseFolder = Config.getProp("UploadDirectory");
 	String testRunId = Configurables.runID;
 	String cr_reponse_header_id;
-	String contentType="application/json";
+	//String contentType="application/json";
 	
 	  
 	@Test(dataProvider = "methodparameters")
@@ -109,28 +109,28 @@ public class SendAPIRequest extends APITestBase {
 		String headerValue = new String();
 		headerValue = filterParam("header",params);
 
-		if (!System.getProperty("gatewayEntityID").equals("")){
-			Pattern pattern = Pattern.compile("gateway-entity-id#(.*?)\\||gateway-entity-id#(.*)", Pattern.CASE_INSENSITIVE);
+		if (System.getProperty("EntityID")!=null && !System.getProperty("EntityID").equals("")){
+			Pattern pattern = Pattern.compile("entity-id#(.*?)\\||entity-id#(.*)", Pattern.CASE_INSENSITIVE);
 			Matcher matcher = pattern.matcher(headerValue);
 			if(matcher.find())
 			{			    	
-				headerValue = headerValue.replaceAll(matcher.group(0).replace("|", ""),"gateway-entity-id#"+System.getProperty("gatewayEntityID"));		    	
+				headerValue = headerValue.replaceAll(matcher.group(0).replace("|", ""),"entity-id#"+System.getProperty("EntityID"));		    	
 			}		    	
 		}
 
-		if (!System.getProperty("gatewayUserID").equals("")){
-			Pattern pattern = Pattern.compile("gateway-user-id#(.*?)\\||gateway-user-id#(.*)", Pattern.CASE_INSENSITIVE);
+		if (System.getProperty("UserID")!=null && !System.getProperty("UserID").equals("")){
+			Pattern pattern = Pattern.compile("user-id#(.*?)\\||user-id#(.*)", Pattern.CASE_INSENSITIVE);
 			Matcher matcher = pattern.matcher(headerValue);		    
 			if(matcher.find())
 			{
-				headerValue = headerValue.replaceAll(matcher.group(0).replace("|", ""),"gateway-user-id#"+System.getProperty("gatewayUserID"));
+				headerValue = headerValue.replaceAll(matcher.group(0).replace("|", ""),"user-id#"+System.getProperty("UserID"));
 			}
 		}
 
 		/*
 		 * Add default Content-Type to headers"
 		 */
-		headerValue = headerValue+"|Content-Type#"+contentType;
+		//headerValue = headerValue+"|Content-Type#"+contentType;
 		//System.out.println("Content-Type: "+contentType);
 
 
@@ -263,23 +263,23 @@ public class SendAPIRequest extends APITestBase {
 		}
 
 		if(request_type.equals("GET")){
-			rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,"",responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken,contentType, scopeOverride);			
+			rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,"",responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken, scopeOverride);			
 			Reporter.log("<details> <summary>View Request Headers</summary><p style=\"font-size:11px\">"+rs.headersStr+"</p></details>");
 		}
 		else{
 			if(request_type.equals("PATCH")){				
-				rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,requestPath,responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken,contentType, scopeOverride);
+				rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,requestPath,responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken, scopeOverride);
 			}
 			else
 				if(request_type.equals("DELETE")){
-					rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,"",responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken,contentType, scopeOverride);
+					rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,"",responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken, scopeOverride);
 				}
 				else if(request_type.equals("POST")){
-					rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,requestPath,responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken,contentType, scopeOverride);
+					rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,requestPath,responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken, scopeOverride);
 				}
 
 				else if(request_type.equals("PUT")){
-					rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,requestPath,responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken,contentType, scopeOverride);
+					rs.postDataToServer(cr_reponse_header_id,resource_params,queryParam,request_type,uri,requestPath,responseXMLDataPath,strCertificatePath,strCertiPass,strRootCerti,strRootPass,headerValue,params.get("TOKEN_URL"),authToken, scopeOverride);
 				}
 				else {
 					System.err.println("***Error - Invalid HTTP Method used - " + request_type+ ". Please validate the setup in the test data sheet.");

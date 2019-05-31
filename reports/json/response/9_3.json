@@ -1,9 +1,0 @@
-{
-  "errors": [
-    {
-      "error_code": "403-005",
-      "description": "Login details invalid. Check your API key and Entity ID and try again.",
-      "api_specification_url": "https://developer.wellsfargo.com"
-    }
-  ]
-}

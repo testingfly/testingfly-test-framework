@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<div class="pagebreak"> </div><head>
+  <title>Test Results Report - Log Output</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+<div id="meta">
+
+  	Generated 
+  
+  at 12:26 EDT on Friday 31 May 2019
+  <br /><span id="systemInfo">admin@Rocketss-MBP&nbsp;/&nbsp;Java 1.8.0_144 (Oracle Corporation)&nbsp;/&nbsp;Mac OS X 10.14.5 (x86_64)</span>
+</div>
+
+  <h1>Log Output</h1>
+  <p>
+    Combined output from all calls to the log methods of the <a href="http://testng.org/javadocs/org/testng/Reporter.html">TestNG Reporter</a>.    
+  </p>
+
+  <div id="log">
+                  ******SCENARIO NAME: 1. <a name="1">Sample:GET STATUS*******</a><br />
+                         <span>View Request Headers</span><br /><p style="font-size:11px">REQUEST PATH: GET http://localhost:3000/answer<br />CONTENT-TYPE: Application/JSON<br /></p><br />
+                         <span>View Response Headers</span><br /><p style="font-size:11px">[X-Powered-By: Express<br /> Content-Type: application/json; charset=utf-8<br /> Content-Length: 34<br /> ETag: W/"22-sXDESF1dySdPtehVFQxzNSDV3Bo"<br /> Date: Fri<br /> 31 May 2019 16:26:29 GMT<br /> Connection: keep-alive]</p><br />
+                         <span>View API Response</span><br /><p style="font-size:11px"> Status Code: HTTP/1.1 200 OK<br />Response Time (ms): 669<br />[
+  {
+    "status": "swimming in the ocean"
+  }
+]</p><br />
+                         <span>Expected Result</span><br /><p style="font-size:11px">Returns current status</p><br />
+                         <span>Response Headers Assertions</span><br /> <p style="font-size:11px"><p style="font-size:11px; color:green">FIELD NOT MISSING for Content-Type - Expected: true, Actual: true   PASS</p></p><br />
+                         <span>Response Body Assertions</span><br /> <p style="font-size:11px"><p style="font-size:11px; color:green">STATUS LINE - Expected: HTTP/1.1 200 OK, Actual: HTTP/1.1 200 OK   PASS</p></p><br />
+                        ******FINISHED RUNNING TEST - 1. Sample:GET STATUS
+STATUS: PASSED******<br /><br /><br />
+                        ******SCENARIO NAME: 2. <a name="2">Sample:GREET DOLPHIN*******</a><br />
+                         <span>View Request Headers</span><br /><p style="font-size:11px">REQUEST PATH: POST http://localhost:3000/dolphins<br />CONTENT-TYPE: Application/JSON<br /></p><br />
+                         <span>View Request Body</span><br /><p style="font-size:11px">{
+  &quot;greet&quot;: &quot;hello dolphin!&quot;,
+  &quot;message&quot;: &quot;here's a treat..&quot;
+}</p><br />
+                         <span>View Response Headers</span><br /><p style="font-size:11px">[X-Powered-By: Express<br /> Content-Type: application/json; charset=utf-8<br /> Content-Length: 51<br /> ETag: W/"33-NDcCe/dpMJt9dIIeP1yGjvDYNJI"<br /> Date: Fri<br /> 31 May 2019 16:26:30 GMT<br /> Connection: keep-alive]</p><br />
+                         <span>View API Response</span><br /><p style="font-size:11px"> Status Code: HTTP/1.1 201 Created<br />Response Time (ms): 456<br />[
+  {
+    "response": "So Long, and Thanks for All the Fish"
+  }
+]</p><br />
+                         <span>Expected Result</span><br /><p style="font-size:11px">Dolphin acknowledges and thanks for the fish</p><br />
+                         <span>Response Headers Assertions</span><br /> <p style="font-size:11px"><p style="font-size:11px; color:green">FIELD NOT MISSING for Content-Type - Expected: true, Actual: true   PASS</p></p><br />
+                         <span>Response Body Assertions</span><br /> <p style="font-size:11px"><p style="font-size:11px; color:red">STATUS LINE - Expected: HTTP/1.1 200 OK, Actual: HTTP/1.1 201 Created   FAIL</p></p><br />
+            </div>
+
+</body>
+</html>

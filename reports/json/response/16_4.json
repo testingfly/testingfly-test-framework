@@ -1,9 +1,0 @@
-{
-  "errors": [
-    {
-      "error_code": "1028-998",
-      "description": "Your request is valid, but does not match any of the Sandbox test cases.",
-      "api_specification_url": "https://devstore.wellsfargo.com/store"
-    }
-  ]
-}

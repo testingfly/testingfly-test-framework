@@ -1,9 +1,0 @@
-{
-  "bank_routing_number": "123",
-  "bank_account_number": "91101621",
-  "client_reference": "12345678901234567890",
-  "validation_channel": "CUSTOMER NOT PRESENT FOR TRANSACTION",
-  "check_number": "123456789012345",
-  "check_amount": "123456789.37",
-  "check_transaction_code": 123456
-}

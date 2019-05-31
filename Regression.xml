@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name="Regression">
+	<parameter name="apiname" value="Regression"/>
+	<parameter name="pdfname" value="API_Test_Result_DEV_Smoke_201905311226.pdf"/>
+	<parameter name="tagName" value="Smoke"/>
+	<parameter name="branch" value="N/A"/>
+	<parameter name="alm" value="http://dummy.com/qcbin/start_a.jsp"/>
+	<parameter name="jobname" value=""/>
+	<parameter name="jenkinsurl" value="http://dummy.net:8080/view/TEST"/>
+	<listeners>
+		<listener class-name="com.javaexcel.automation.core.reporting.HTMLReporter"/>
+		<listener class-name="org.testng.reporters.JUnitXMLReporter"/>
+		<listener class-name="com.javaexcel.automation.core.listeners.CustomLogger"/>
+	</listeners>
+	<test name="Get Status">
+		<parameter name="previous" value="1"/>
+		<parameter name="next" value="2"/>
+		<parameter name="override header_1" value=""/>
+		<parameter name="InstanceID" value="0"/>
+		<parameter name="override header_2" value=""/>
+		<parameter name="scenario_name" value="Get Status"/>
+		<parameter name="includeinrun" value="Y"/>
+		<parameter name="column_40" value=""/>
+		<parameter name="column_41" value=""/>
+		<parameter name="column_42" value=""/>
+		<parameter name="column_47" value=""/>
+		<parameter name="column_48" value=""/>
+		<parameter name="column_49" value=""/>
+		<parameter name="id" value="1"/>
+		<parameter name="column_43" value=""/>
+		<parameter name="column_44" value=""/>
+		<parameter name="column_45" value=""/>
+		<parameter name="column_46" value=""/>
+		<parameter name="header4" value=""/>
+		<parameter name="header3" value=""/>
+		<parameter name="datatypeoverride" value=""/>
+		<parameter name="header2" value=""/>
+		<parameter name="header1" value="Content-Type#Application/JSON"/>
+		<parameter name="requiredoverride" value=""/>
+		<parameter name="header7" value=""/>
+		<parameter name="version" value="1.0"/>
+		<parameter name="header6" value=""/>
+		<parameter name="header5" value=""/>
+		<parameter name="column_50" value=""/>
+		<parameter name="column_51" value=""/>
+		<parameter name="column_52" value=""/>
+		<parameter name="column_53" value=""/>
+		<parameter name="test suite id" value="1"/>
+		<parameter name="expected result" value="Returns current status"/>
+		<parameter name="auth key3.0" value="Basic auth token"/>
+		<parameter name="column_58" value=""/>
+		<parameter name="column_59" value=""/>
+		<parameter name="column_54" value=""/>
+		<parameter name="column_55" value=""/>
+		<parameter name="column_56" value=""/>
+		<parameter name="column_57" value=""/>
+		<parameter name="validateerrorcode" value=""/>
+		<parameter name="certificatepassword" value=""/>
+		<parameter name="tomcat resource path" value="/answer"/>
+		<parameter name="column_61" value=""/>
+		<parameter name="TestID" value="1"/>
+		<parameter name="column_62" value=""/>
+		<parameter name="column_63" value=""/>
+		<parameter name="testparentname" value="Sample"/>
+		<parameter name="column_64" value=""/>
+		<parameter name="column_60" value=""/>
+		<parameter name="column_69" value=""/>
+		<parameter name="validation2" value=""/>
+		<parameter name="validation1" value=""/>
+		<parameter name="validation4" value=""/>
+		<parameter name="validation3" value=""/>
+		<parameter name="column_65" value=""/>
+		<parameter name="column_66" value=""/>
+		<parameter name="validation5" value=""/>
+		<parameter name="token_url" value=""/>
+		<parameter name="column_67" value=""/>
+		<parameter name="column_68" value=""/>
+		<parameter name="certificatepath" value=""/>
+		<parameter name="add header" value=""/>
+		<parameter name="column_70" value=""/>
+		<parameter name="column_71" value=""/>
+		<parameter name="override baseuri" value=""/>
+		<parameter name="validatestatusline" value="HTTP/1.1 200 OK"/>
+		<parameter name="test case id" value="1"/>
+		<parameter name="tagname" value="Smoke"/>
+		<parameter name="resource" value="Get Status"/>
+		<parameter name="autogeneratetcs?" value="Y"/>
+		<parameter name="exclude header" value=""/>
+		<parameter name="auth key1.0" value="Basic auth token"/>
+		<parameter name="requesttemplate" value=""/>
+		<parameter name="ConfigID" value="1"/>
+		<parameter name="validateerrordescription" value=""/>
+		<parameter name="excludedcheck" value=""/>
+		<parameter name="column_29" value=""/>
+		<parameter name="validateheader5" value="Content-Type$NotNull"/>
+		<parameter name="validateheader6" value=""/>
+		<parameter name="validateheader3" value=""/>
+		<parameter name="validateheader4" value=""/>
+		<parameter name="wso2 resource path" value="/answer"/>
+		<parameter name="validateheader7" value=""/>
+		<parameter name="validateheader8" value=""/>
+		<parameter name="validateminlength" value=""/>
+		<parameter name="override header" value=""/>
+		<parameter name="requesttype" value="GET"/>
+		<parameter name="validateheader1" value=""/>
+		<parameter name="validateheader2" value=""/>
+		<parameter name="apispecificationurl" value=""/>
+		<parameter name="baseuri" value="http://localhost:3000"/>
+		<parameter name="column_28" value=""/>
+		<parameter name="swaggerfile" value=""/>
+		<parameter name="testCaseID" value="1"/>
+		<parameter name="column_30" value=""/>
+		<parameter name="environment" value="DEV"/>
+		<parameter name="column_31" value=""/>
+		<parameter name="auth key2.0" value="Basic auth token"/>
+		<parameter name="column_36" value=""/>
+		<parameter name="column_37" value=""/>
+		<parameter name="column_38" value=""/>
+		<parameter name="column_39" value=""/>
+		<parameter name="column_32" value=""/>
+		<parameter name="column_33" value=""/>
+		<parameter name="column_34" value=""/>
+		<parameter name="column_35" value=""/>
+		<classes>
+			<class name="com.javaexcel.test.steps.SendAPIRequest">
+				<methods>
+					<include name="sendRequest">
+						<parameter name="componentid" value="Null"/>
+						<parameter name="componentname" value="Send API Request"/>
+					</include>
+				</methods>
+			</class>
+			<class name="com.javaexcel.test.steps.ValidateAPIResponse">
+				<methods>
+					<include name="validateAPIResponse">
+						<parameter name="componentid" value="Null"/>
+						<parameter name="componentname" value="Validate the API Response based on Expected Results defined."/>
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Greet Dolphin">
+		<parameter name="previous" value="1"/>
+		<parameter name="next" value="2"/>
+		<parameter name="override baseuri" value=""/>
+		<parameter name="override header_1" value=""/>
+		<parameter name="validatestatusline" value="HTTP/1.1 200 OK"/>
+		<parameter name="InstanceID" value="1"/>
+		<parameter name="override header_2" value=""/>
+		<parameter name="scenario_name" value="Greet Dolphin"/>
+		<parameter name="includeinrun" value="Y"/>
+		<parameter name="test case id" value="1"/>
+		<parameter name="tagname" value="Smoke"/>
+		<parameter name="id" value="2"/>
+		<parameter name="header4" value=""/>
+		<parameter name="header3" value=""/>
+		<parameter name="datatypeoverride" value=""/>
+		<parameter name="header2" value=""/>
+		<parameter name="header1" value="Content-Type#Application/JSON"/>
+		<parameter name="requiredoverride" value=""/>
+		<parameter name="resource" value="Greet"/>
+		<parameter name="autogeneratetcs?" value="Y"/>
+		<parameter name="exclude header" value=""/>
+		<parameter name="header7" value=""/>
+		<parameter name="version" value="1.0"/>
+		<parameter name="header6" value=""/>
+		<parameter name="header5" value=""/>
+		<parameter name="test suite id" value="2"/>
+		<parameter name="auth key1.0" value="Basic auth token"/>
+		<parameter name="expected result" value="Dolphin acknowledges and thanks for the fish"/>
+		<parameter name="auth key3.0" value="Basic auth token"/>
+		<parameter name="requesttemplate" value="greet-dolphin.json"/>
+		<parameter name="ConfigID" value="2"/>
+		<parameter name="validateerrordescription" value=""/>
+		<parameter name="excludedcheck" value=""/>
+		<parameter name="validateerrorcode" value=""/>
+		<parameter name="certificatepassword" value=""/>
+		<parameter name="validateheader5" value="Content-Type$NotNull"/>
+		<parameter name="validateheader6" value=""/>
+		<parameter name="validateheader3" value=""/>
+		<parameter name="validateheader4" value=""/>
+		<parameter name="tomcat resource path" value="/dolphins"/>
+		<parameter name="wso2 resource path" value="/dolphins"/>
+		<parameter name="validateheader7" value=""/>
+		<parameter name="validateheader8" value=""/>
+		<parameter name="validateminlength" value=""/>
+		<parameter name="TestID" value="2"/>
+		<parameter name="override header" value=""/>
+		<parameter name="requesttype" value="POST"/>
+		<parameter name="testparentname" value="Sample"/>
+		<parameter name="validateheader1" value=""/>
+		<parameter name="validateheader2" value=""/>
+		<parameter name="apispecificationurl" value=""/>
+		<parameter name="baseuri" value="http://localhost:3000"/>
+		<parameter name="validation2" value=""/>
+		<parameter name="validation1" value=""/>
+		<parameter name="validation4" value=""/>
+		<parameter name="validation3" value=""/>
+		<parameter name="validation5" value=""/>
+		<parameter name="token_url" value=""/>
+		<parameter name="swaggerfile" value=""/>
+		<parameter name="testCaseID" value="1"/>
+		<parameter name="certificatepath" value=""/>
+		<parameter name="add header" value=""/>
+		<parameter name="environment" value="DEV"/>
+		<parameter name="auth key2.0" value="Basic auth token"/>
+		<classes>
+			<class name="com.javaexcel.test.steps.GenerateJSONFile">
+				<methods>
+					<include name="createJSONFile">
+						<parameter name="componentid" value="Null"/>
+						<parameter name="componentname" value="Generate JSON file based on Input Parameters"/>
+					</include>
+				</methods>
+			</class>
+			<class name="com.javaexcel.test.steps.SendAPIRequest">
+				<methods>
+					<include name="sendRequest">
+						<parameter name="componentid" value="Null"/>
+						<parameter name="componentname" value="Send API Request"/>
+					</include>
+				</methods>
+			</class>
+			<class name="com.javaexcel.test.steps.ValidateAPIResponse">
+				<methods>
+					<include name="validateAPIResponse">
+						<parameter name="componentid" value="Null"/>
+						<parameter name="componentname" value="Validate the API Response based on Expected Results defined."/>
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
